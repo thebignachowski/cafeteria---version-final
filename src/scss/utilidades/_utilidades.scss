@@ -1,0 +1,28 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
+*/
+/*
+    Created on : 21 oct. 2022, 17:22:48
+    Author     : IGNACIO
+*/
+@use 'base/variables' as v;
+
+.text-center {
+    text-align: center;
+}
+.bg-primario {
+    background-color: v.$primario;
+}
+
+.margin-negativo-10 {
+    margin-top: -10rem;
+}
+
+.bg-white {
+    background-color: v.$blanco;
+}
+
+.padding-bottom-0 {
+    padding-bottom: 0;
+}

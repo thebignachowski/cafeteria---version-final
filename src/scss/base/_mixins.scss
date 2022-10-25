@@ -1,0 +1,37 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
+*/
+/*
+    Created on : 21 oct. 2022, 18:21:23
+    Author     : IGNACIO
+*/
+@use 'variables' as v;
+
+@mixin telefono {
+    @media(min-width: v.$telefono) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media(min-width: v.$tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media(min-width: v.$desktop) {
+        @content;
+    }
+}
+
+@mixin grid( $columnas, $espaciado ) { 
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espaciado;
+}
+
+
+
+

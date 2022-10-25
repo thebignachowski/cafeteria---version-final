@@ -1,0 +1,35 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
+*/
+/*
+    Created on : 22 oct. 2022, 9:57:23
+    Author     : IGNACIO
+*/
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.nuestros-testimoniales {
+    padding: 10rem 2rem;
+    
+    @include m.tablet {
+        padding: 10rem;
+    }
+    
+    .testimonial {
+        background-color: v.$cafeClaro;
+        padding: 2rem 4rem;
+        max-width: 50rem;
+        margin: 0 auto;
+        line-height: 2;
+        border-radius: 1rem;
+        .autor {
+            text-align: right;
+            font-size: 2.4rem;
+            color: v.$primario;
+            font-family: v.$fuente_cursiva;
+        }
+    }
+}
+
+

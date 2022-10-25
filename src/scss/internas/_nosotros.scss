@@ -1,0 +1,40 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
+*/
+/*
+    Created on : 22 oct. 2022, 10:58:52
+    Author     : IGNACIO
+*/
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenido-nosotros {
+    
+    @include m.tablet {
+        @include m.grid(2, 2rem);
+    }
+    .imagen {
+        
+        margin-bottom: 5rem;
+        
+        @include m.tablet {
+            margin: 0 2rem 0 0;
+        }
+        
+        img {
+            transform: rotate(-6deg);
+            border: 3rem solid v.$blanco;
+            box-shadow: 9px 10px 5px -7px rgb( 0 0 0 / .35 );
+        }
+    }
+    
+    .texto {
+        blockquote {
+            margin: 0;
+            padding: 1rem;
+            border-left: .5rem solid v.$primario;
+            font-size: 2rem;
+        }
+    }
+}

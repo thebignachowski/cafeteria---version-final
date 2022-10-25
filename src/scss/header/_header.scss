@@ -1,0 +1,69 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
+*/
+/*
+    Created on : 21 oct. 2022, 16:45:23
+    Author     : IGNACIO
+*/
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header {
+    padding: 5rem 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include m.tablet {
+        min-height: 70rem;
+    }
+    
+    &::before {
+        content: '';
+        background-color: v.$negro;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        opacity: .6;
+    }
+
+    .contenido-header {
+        position: relative;
+        
+        h1 {
+            text-align: center;
+            color: v.$blanco;
+            text-transform: uppercase;
+            margin-top: 5rem;
+            @include m.tablet {
+                margin-top: 10rem;
+            }
+        }
+    }
+}
+
+.header-inicio {
+    background-image: url('../img/header_inicio.jpg');
+}
+
+.header-nosotros {
+    background-image: url(../img/header_nosotros.jpg);
+}
+
+.header-proceso {
+    background-image: url(../img/header_proceso.jpg);
+}
+
+.header-menu {
+    background-image: url(../img/header_menu.jpg);
+}
+
+.header-galeria {
+    background-image: url(../img/header_galeria.jpg);
+}
+
+.header-contacto {
+    background-image: url(../img/header_contacto.jpg);
+}
